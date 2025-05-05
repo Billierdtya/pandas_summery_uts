@@ -1,0 +1,5 @@
+Pada kode ini, beberapa dataset dari file CSV yang berbeda, yaitu "Benign Traffic.csv", "DDoS ICMP Flood.csv", dan "DDoS UDP Flood.csv", dimuat ke dalam variabel dataset, dataset2, dan dataset3 menggunakan fungsi pd.read_csv(). Ketiga dataset ini kemudian digabungkan menjadi satu DataFrame besar menggunakan pd.concat() dan disimpan dalam variabel hasilgabung.
+
+Setelah itu, data dipisahkan menjadi fitur (X) dan target (Y), di mana x berisi kolom fitur dan y berisi kolom target. Data ini kemudian dibagi menjadi data latih dan data uji menggunakan fungsi train_test_split(). Model klasifikasi pohon keputusan (DecisionTreeClassifier) dilatih menggunakan data latih, dan kemudian digunakan untuk memprediksi data uji. Akurasi model dihitung dengan membandingkan hasil prediksi (y_pred) dengan label asli (y_test) menggunakan accuracy_score().
+
+Terakhir, visualisasi pohon keputusan dan confusion matrix ditampilkan untuk mengevaluasi performa model. Visualisasi ini membantu untuk memahami bagaimana model mengambil keputusan serta seberapa baik model dalam mengklasifikasikan data ke dalam kategori yang tepat.
